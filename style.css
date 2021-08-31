@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    --main-color:#283526;
+    --primary-color:#888888;
+    --button-background:#0073ff;
+    --primary-button-background:#fe7649;
+    --background-color:#e6e8eb;
+}
+h1,h2{
+    font-family: sans-serif;
+    color: var(--main-color);
+    font-size: 2.2rem;
+}
+h4,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-color);
+}
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+p,a ,li, button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-color);
+}
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+    
+}
+button{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    line-height: 3.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+/*------------------------------------------------------------main-menu-styling
+---------------------------------------------------------------------------------------------------- */
+
+
+header{
+    padding: 0 10rem;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+}
+
+header nav .left-side-menu{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 50%;
+}
+header nav .left-side-menu a{
+    margin-right: 4rem;
+}
+
+header nav .left-side-menu a img{
+    width: 13rem;
+    height: 5.5rems;
+}
+
+header nav .left-side-menu .sub-menu{
+    height: inherit;
+    display: flex;
+}
+header nav .left-side-menu .sub-menu a {
+    margin-right: 4rem;
+}
+
+
+header nav .left-side-menu .sub-menu a li{
+    font-size: 2rem;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    transition: all .2s;
+}
+header nav .left-side-menu .sub-menu a li:hover{
+    color: var(--button-background);
+}
+
+/* ---------------------------------------------------right-side-navbar --------------------------------------------------------------------------------------------------------- */
+
+header .right-side-menu .sub-menu{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .right-side-menu .sub-menu a{
+    margin-right: 7rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1;
+}
+header .right-side-menu .sub-menu a li:hover{
+    color: var(--button-background);
+}
+header .right-side-menu .sub-menu button{
+    position: relative;
+    z-index: 1;
+}
+
+header .right-side-menu .sub-menu button:hover{
+    background-color: rgb(124, 148, 221);
+    color: white;
+}
+
+
+/* -------------------------------------------------main section ------------------------------------------------------------------------------------------ */
+
+/* -----------------------------------------------------left side css
+-------------------------------------------------------------------------------------------- */
+.main-section{
+    padding: 0 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem ;
+    
+}
+.main-section h1{
+    width: 50rem;
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 4rem;
+    text-align: start;text-transform: capitalize;
+}
+
+.main-section p{
+    margin-bottom: 6rem;
+    width: 50rem;
+    text-align: start;
+
+}
+.main-section .left-sec{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    text-align: center;
+    height: 52rem;
+}
+.main-section a img{
+    width: 13.5rem;
+    height: 4rem;
+}
+
+
+.main-section .button-group{
+  height: 4.3rem;
+  margin-bottom: -0.4rem;
+
+}
+.main-section .button-group .img1{
+    margin-right: 2.5rem;
+}
+
+
+/*--------------------------------------- right side css 
+--------------------------------------------------------------------------------------------------------- */
+
+.main-section .right-sec{
+    width: 50%;
+    height: 100vh;
+    background: var(--background-color);
+    position: absolute;    
+    right: 0;
+    top: 0;
+    border-radius: 90px 20px 0px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section .right-sec img{
+    padding-top: 1rem;
+    height: 50rem;
+    width: 60rem;
+}
+
+/* ------------------------------------------------------this is our section 2
+------------------------------------------------------------------------------------------------------------- */
+
+.sec2{
+    width: 100%;
+    height: 62rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+    padding: 0 10rem;
+}
+.sec2 .left-sec2 {
+    width: inherit;
+    height: inherit;
+}
+.sec2 .left-sec2 figure{
+    width: 20rem;
+    height: 65rem;
+    background: #c9e1fa;
+    border-radius: 20px;
+}
+
+.sec2 .left-sec2 img {
+    width: 45rem;
+    height: 60rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+
+}
+.sec2 .right-sec2{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sec2 .right-sec2  h2{
+    width: 52rem ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 6.3rem;
+    margin-bottom: 3rem;
+    text-transform:capitalize;
+}
+.sec2 .right-sec2  p{
+    margin-bottom: 3rem;
+    height: 9rem;
+}
+.sec2 .right-sec2 .common-button{
+    padding: 1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color: white;
+}
+.sec2 .right-sec2 button:last-child{
+    color: var(--main-color);
+    background-color: transparent;
+}
+.sec2 .right-sec2 .common-button:hover{
+    background-color: #cc491d;
+}
+.sec2 .right-sec2 .common-button-normal:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+
+/* ------------------------------------------------------this is our section 3
+------------------------------------------------------------------------------------------------------------- */
+
+
+.sec3{
+    width: 100%;
+    height: 70rem;
+    background: var(--background-color);
+    padding: 3rem 10rem;
+}
+.sec3 h2{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.sec3 .op{
+    text-align: center;
+    width: 110rem;
+    margin: auto;
+}
+.sec3 .tasks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3rem;
+    grid-column-gap: 4rem;
+}
+
+.sec3 .tasks .task1,
+.sec3 .tasks .task2,
+.sec3 .tasks .task3{
+    padding-top: 2rem;
+    text-align: center;
+    transition: all 0.3s linear;
+    border-radius: 2rem;
+}
+.sec3 .tasks .task1 h3,
+.sec3 .tasks .task2 h3,
+.sec3 .tasks .task3 h3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+}
+.sec3 .tasks .task1 p,
+.sec3 .tasks .task2 p,
+.sec3 .tasks .task3 p{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+/* in case i change the image i can set their width same with this property */
+
+.sec3 .tasks .task1 img,
+.sec3 .tasks .task2 img,
+.sec3 .tasks .task3 img{
+    border-radius: 1rem;
+}
+.sec3 .tasks .task1:hover,
+.sec3 .tasks .task2:hover,
+.sec3 .tasks .task3:hover{
+    background: #fff;
+    box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 52, .25);
+}
+
+/* this is my rotate class when in use  */
+
+/* .sec3 .tasks .task1 .sec3 img:hover,
+.sec3 .tasks .task2 .sec3 img:hover,
+.sec3 .tasks .task3 .sec3 img:hover{
+    transform: rotate(360deg);
+} */
+
+
+
+/* ------------------------------------------------------this is our section 4
+------------------------------------------------------------------------------------------------------------- */
+
+
+
+.sec4{
+    width: 100%;
+    height: 62rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 9rem;
+    padding: 0 10rem;
+}
+.sec4 .left-sec4 {
+    width: inherit;
+    height: inherit;
+}
+.sec4 .left-sec4 figure{
+    width: 65rem;
+    height: 65rem;
+    background: #c9e1fa;
+    border-radius: 20px;
+}
+
+.sec4 .left-sec4 img {
+    width: 45rem;
+    height: 60rem;
+    border-radius: 2rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+
+}
+.sec4 .right-sec4{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sec4 .right-sec4  h2{
+    width: 52rem ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 6.3rem;
+    margin-bottom: 3rem;
+    text-transform:capitalize;
+}
+.sec4 .right-sec4  p{
+    margin-bottom: 3rem;
+    height: 9rem;
+}
+.sec4 .right-sec4 .common-button{
+    padding: 1rem 3rem;
+    background-color: var(--primary-button-background);
+    margin-right: 2rem;
+    color: white;
+}
+.sec4 .right-sec4 button:last-child{
+    color: var(--main-color);
+    background-color: transparent;
+}
+.sec4 .right-sec4 .common-button:hover{
+    background-color: #cc491d;
+}
+.sec4 .right-sec4 .common-button-normal:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+
+/* ------------------------------------------------------this is our section5
+------------------------------------------------------------------------------------------------------------- */
+#section-5 h1{
+        font-size: 3.5rem;
+        padding: 2rem;
+        line-height: 2rem;
+        padding-bottom: 5rem;
+
+    }
+#section-5 h2{
+    font-size: 2rem;
+    padding: 2rem  ;
+}
+#section-5 p{
+    font-size: 1.3rem;
+    padding: 0 2rem;
+}
+#section-5 .right-sec5{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ------------------------------------------------------this is our footer
+------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    background: var(--background-color);
+    height: auto;
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer img{
+    width: 10rem;
+    height: 10rem;
+}
+
+footer .footer-menu{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+footer div a{line-height: 150%;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+ 
